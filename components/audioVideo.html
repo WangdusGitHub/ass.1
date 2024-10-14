@@ -3,9 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>audio-video</title>
+
+    <style>
+        .audio-video--wraper {
+            display: flex;
+            flex-direction: column;
+        }
+        .video-file {
+            height: 500px;
+            
+            margin: 2rem auto 0 auto;
+        }
+        .audio-file {
+            margin: 1rem auto;
+        }
+        .video-file, .audio-file {
+            width: 500px;
+
+            border-radius: 10px;
+
+            box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.5);
+        }
+        @media (max-width: 500px) {
+            .video-file, .audio-file {
+                width: 90%;
+            }
+        }
+    </style>
 </head>
 <body>
-    <audio src=""></audio>
+    <div class="audio-video--wraper">
+
+        <video class="video-file" src="../resources/xj43zaej8d.mp4" controls></video>
+        <audio class="audio-file" src="../resources/- JAWNY  Honeypie Animation MV Official Full Vers.mp3" controls></audio>
+    </div>
 </body>
 </html>
